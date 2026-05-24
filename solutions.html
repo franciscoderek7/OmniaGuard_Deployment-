@@ -6,12 +6,12 @@
     <meta name="description" content="OmniaGuard cybersecurity solutions for personal, business, government, and multi-company empires.">
     <link rel="icon" type="image/webp" href="assets/omniaguard-logo.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" media="print" onload="this.media='all'" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="nav"><div class="nav-in">
-        <a href="index.html" class="nav-logo"><img src="assets/omniaguard-logo.webp" alt="OmniaGuard"><b>Omnia<span>Guard</span></b></a>
+        <a href="index.html" class="nav-logo"><img src="assets/omniaguard-logo.webp" alt="OmniaGuard" width="32" height="32" loading="eager"><b>Omnia<span>Guard</span></b></a>
         <ul class="nav-links"><li><a href="devices.html">Devices</a></li><li><a href="solutions.html" class="active">Solutions</a></li><li><a href="features.html">Features</a></li><li><a href="technology.html">Technology</a></li><li><a href="agents.html">Agents</a></li>
             <li><a href="pricing.html">Pricing</a></li><li><a href="about.html">Trust</a></li><li><a href="agents.html">Agents</a><a href="partners.html">Partners</a></li></ul>
         <a href="pricing.html" class="nav-cta">Get Protected</a>
@@ -143,5 +143,6 @@
         event.target.classList.add('active');
     }
     </script>
+<script src="chat-widget.js" defer></script>
 </body>
 </html>

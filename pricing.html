@@ -6,12 +6,12 @@
     <meta name="description" content="OmniaGuard pricing: Personal $9.99/mo, Professional $29.99/mo, Enterprise $499/mo per 100 devices, Empire custom. Annual billing saves 2 months.">
     <link rel="icon" type="image/webp" href="assets/omniaguard-logo.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" media="print" onload="this.media='all'" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="nav"><div class="nav-in">
-        <a href="index.html" class="nav-logo"><img src="assets/omniaguard-logo.webp" alt="OmniaGuard"><b>Omnia<span>Guard</span></b></a>
+        <a href="index.html" class="nav-logo"><img src="assets/omniaguard-logo.webp" alt="OmniaGuard" width="32" height="32" loading="eager"><b>Omnia<span>Guard</span></b></a>
         <ul class="nav-links"><li><a href="devices.html">Devices</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="features.html">Features</a></li><li><a href="technology.html">Technology</a></li><li><a href="pricing.html" class="active">Pricing</a></li><li><a href="about.html">Trust</a></li><li><a href="agents.html">Agents</a><a href="partners.html">Partners</a></li></ul>
         <a href="pricing.html" class="nav-cta">Get Protected</a>
         <button class="mobile-btn" onclick="document.getElementById('mn').style.display=document.getElementById('mn').style.display==='block'?'none':'block'" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
@@ -23,10 +23,10 @@
     <section class="section"><div class="section-in">
         <div class="price-grid">
             <div class="price-card" style="position:relative">
-                <div class="price-tier">Starter</div>
+                <div class="price-tier">Sentinel</div>
                 <div class="price-name">Personal</div>
-                <div class="price-amt">$9.99</div>
-                <div class="price-sub">per month ($99.90/yr — save $19.98)</div>
+                <div class="price-amt">$49 <small style="font-size:.4em;color:var(--txt3)">CAD</small></div>
+                <div class="price-sub">per month (billed monthly)</div>
                 <ul class="price-list">
                     <li>5 devices protected</li>
                     <li>Identity monitoring</li>
@@ -37,13 +37,13 @@
                     <li>Safe browsing</li>
                     <li>Family safety controls</li>
                 </ul>
-                <a href="#" class="btn btn-s btn-sm" style="width:100%;justify-content:center" onclick="alert('Stripe integration coming soon. Contact sales for early access.');return false;">Start Free Trial</a>
+                <a href="#" class="btn btn-s btn-sm" style="width:100%;justify-content:center" onclick="window.open('https://buy.stripe.com/SENTINEL_LINK','_blank');return false;">Start Free Trial</a>
             </div>
             <div class="price-card pop" style="position:relative">
-                <div class="price-tier">Growth</div>
+                <div class="price-tier">Warden</div>
                 <div class="price-name">Professional</div>
-                <div class="price-amt">$29.99</div>
-                <div class="price-sub">per month ($299.90/yr — save $59.98)</div>
+                <div class="price-amt">$199 <small style="font-size:.4em;color:var(--txt3)">CAD</small></div>
+                <div class="price-sub">per month (billed monthly)</div>
                 <ul class="price-list">
                     <li>25 devices protected</li>
                     <li>Business email protection</li>
@@ -54,13 +54,13 @@
                     <li>Employee training portal</li>
                     <li>Priority support (4hr SLA)</li>
                 </ul>
-                <a href="#" class="btn btn-p btn-sm" style="width:100%;justify-content:center" onclick="alert('Stripe integration coming soon. Contact sales for early access.');return false;">Start Free Trial</a>
+                <a href="#" class="btn btn-p btn-sm" style="width:100%;justify-content:center" onclick="window.open('https://buy.stripe.com/WARDEN_LINK','_blank');return false;">Start Free Trial</a>
             </div>
             <div class="price-card" style="position:relative">
-                <div class="price-tier">Scale</div>
+                <div class="price-tier">Emperor</div>
                 <div class="price-name">Enterprise</div>
-                <div class="price-amt">$499</div>
-                <div class="price-sub">per 100 devices/month</div>
+                <div class="price-amt">Custom</div>
+                <div class="price-sub">Enterprise pricing — contact sales</div>
                 <ul class="price-list">
                     <li>Unlimited devices</li>
                     <li>Full Threat Radar + IOC feed</li>
@@ -71,7 +71,7 @@
                     <li>1-hour incident response SLA</li>
                     <li>Custom integrations</li>
                 </ul>
-                <a href="about.html#contact" class="btn btn-s btn-sm" style="width:100%;justify-content:center">Contact Sales</a>
+                <a href="contact.html" class="btn btn-s btn-sm" style="width:100%;justify-content:center">Contact Sales</a>
             </div>
             <div class="price-card" style="position:relative">
                 <div class="price-tier">Dominion</div>
@@ -88,7 +88,7 @@
                     <li>Sovereign data residency</li>
                     <li>CISO-as-a-Service</li>
                 </ul>
-                <a href="about.html#contact" class="btn btn-s btn-sm" style="width:100%;justify-content:center">Contact Sales</a>
+                <a href="contact.html" class="btn btn-s btn-sm" style="width:100%;justify-content:center">Contact Sales</a>
             </div>
         </div>
     </div></section>
@@ -164,5 +164,6 @@
     </div></section>
 
     <footer class="footer"><div class="footer-in"><div class="footer-bot"><small>&copy; 2025 OmniaGuard. All rights reserved.</small><small>A Francisco Holdings Inc. initiative &bull; Built in Canada 🇨🇦</small></div></div></footer>
+<script src="chat-widget.js" defer></script>
 </body>
 </html>
