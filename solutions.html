@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions | OmniaGuard</title>
+    <meta name="description" content="OmniaGuard cybersecurity solutions for personal, business, government, and multi-company empires.">
+    <link rel="icon" type="image/webp" href="assets/omniaguard-logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav"><div class="nav-in">
+        <a href="index.html" class="nav-logo"><img src="assets/omniaguard-logo.webp" alt="OmniaGuard"><b>Omnia<span>Guard</span></b></a>
+        <ul class="nav-links"><li><a href="devices.html">Devices</a></li><li><a href="solutions.html" class="active">Solutions</a></li><li><a href="features.html">Features</a></li><li><a href="technology.html">Technology</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="about.html">Trust</a></li><li><a href="partners.html">Partners</a></li></ul>
+        <a href="pricing.html" class="nav-cta">Get Protected</a>
+        <button class="mobile-btn" onclick="document.getElementById('mn').style.display=document.getElementById('mn').style.display==='block'?'none':'block'" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div><div class="mobile-nav" id="mn"><a href="index.html">Home</a><a href="devices.html">Devices</a><a href="solutions.html">Solutions</a><a href="features.html">Features</a><a href="technology.html">Technology</a><a href="pricing.html">Pricing</a><a href="about.html">Trust</a><a href="partners.html">Partners</a></div></nav>
+
+    <div class="pg-hdr"><h1>Solutions</h1><p>Security tailored to your scale — from protecting a family to governing a 17-company empire.</p></div>
+
+    <section class="section"><div class="section-in">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('personal')">Personal</button>
+            <button class="tab-btn" onclick="showTab('business')">Business</button>
+            <button class="tab-btn" onclick="showTab('government')">Government</button>
+            <button class="tab-btn" onclick="showTab('empire')">Empire</button>
+        </div>
+
+        <div class="tab-ct active" id="tab-personal">
+            <div class="g2" style="gap:2rem;align-items:start">
+                <div>
+                    <h2 style="font-size:1.5rem;font-weight:800;margin-bottom:1rem">Personal & Family Protection</h2>
+                    <p style="font-size:.9rem;color:var(--txt2);line-height:1.7;margin-bottom:1.5rem">Protect your family's digital life — smartphones, laptops, tablets, and smart home devices. Identity monitoring, dark web alerts, and parental controls included.</p>
+                    <ul style="list-style:none;display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.5rem">
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Up to 5 devices protected</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Identity theft monitoring & alerts</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Dark web credential scanning</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Mobile threat defense (iOS & Android)</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Safe browsing & anti-phishing</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Family safety controls & screen time</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Smart home IoT device monitoring</li>
+                    </ul>
+                    <a href="pricing.html" class="btn btn-p btn-sm">Start at $9.99/mo →</a>
+                </div>
+                <div class="card" style="padding:1.5rem;background:var(--bg2)">
+                    <h4 style="font-size:.9rem;font-weight:700;margin-bottom:.75rem;color:var(--accent)">Use Case: The Connected Family</h4>
+                    <p style="font-size:.8rem;color:var(--txt2);line-height:1.7">A family of 4 with 2 smartphones, 2 laptops, and a tablet. OmniaGuard monitors all 5 devices, alerts when a child visits dangerous sites, detects if credentials appear on the dark web, and blocks phishing SMS before they're opened.</p>
+                    <div style="margin-top:1rem;padding:.75rem;background:var(--bg3);border-radius:8px">
+                        <div style="font-size:.7rem;color:var(--accent);font-family:var(--mono);margin-bottom:.3rem">ROI ESTIMATE</div>
+                        <div style="font-size:.85rem;color:var(--txt)">Average identity theft costs $1,551. OmniaGuard Personal costs $119.88/year. <strong>13x return on protection investment.</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-ct" id="tab-business">
+            <div class="g2" style="gap:2rem;align-items:start">
+                <div>
+                    <h2 style="font-size:1.5rem;font-weight:800;margin-bottom:1rem">Business & SMB Protection</h2>
+                    <p style="font-size:.9rem;color:var(--txt2);line-height:1.7;margin-bottom:1.5rem">Endpoint protection, email security, compliance tools, and cloud backup for growing businesses. SOC2 and ISO 27001 compliance scoring included.</p>
+                    <ul style="list-style:none;display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.5rem">
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Up to 25 devices (scalable)</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Business email protection (BEC, phishing)</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Cloud backup & disaster recovery</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Compliance scoring (SOC2, ISO, PCI)</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Red Cell Lite (monthly pen test)</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Employee security training portal</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Priority support (4-hour SLA)</li>
+                    </ul>
+                    <a href="pricing.html" class="btn btn-p btn-sm">Start at $29.99/mo →</a>
+                </div>
+                <div class="card" style="padding:1.5rem;background:var(--bg2)">
+                    <h4 style="font-size:.9rem;font-weight:700;margin-bottom:.75rem;color:var(--accent)">Use Case: Growing SaaS Startup</h4>
+                    <p style="font-size:.8rem;color:var(--txt2);line-height:1.7">A 15-person SaaS company handling customer data. OmniaGuard protects all endpoints, monitors email for BEC attacks, maintains SOC2 compliance scoring for investor due diligence, and runs monthly automated pen tests.</p>
+                    <div style="margin-top:1rem;padding:.75rem;background:var(--bg3);border-radius:8px">
+                        <div style="font-size:.7rem;color:var(--accent);font-family:var(--mono);margin-bottom:.3rem">ROI ESTIMATE</div>
+                        <div style="font-size:.85rem;color:var(--txt)">Average SMB breach costs $108,000. OmniaGuard Professional costs $359.88/year. <strong>300x return on protection investment.</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-ct" id="tab-government">
+            <div class="g2" style="gap:2rem;align-items:start">
+                <div>
+                    <h2 style="font-size:1.5rem;font-weight:800;margin-bottom:1rem">Government & Public Sector</h2>
+                    <p style="font-size:.9rem;color:var(--txt2);line-height:1.7;margin-bottom:1.5rem">Sovereign data residency, classified environment options, and FedRAMP-ready architecture for government agencies and critical infrastructure.</p>
+                    <ul style="list-style:none;display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.5rem">
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Canadian sovereign data residency</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> FedRAMP-ready architecture</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Classified environment options (PBMM)</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Critical infrastructure protection (OT/SCADA)</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Air-gapped deployment options</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Threat intelligence sharing (STIX/TAXII)</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Supply chain risk management</li>
+                    </ul>
+                    <a href="about.html#contact" class="btn btn-p btn-sm">Contact Government Sales →</a>
+                </div>
+                <div class="card" style="padding:1.5rem;background:var(--bg2)">
+                    <h4 style="font-size:.9rem;font-weight:700;margin-bottom:.75rem;color:var(--accent)">Use Case: Municipal Government</h4>
+                    <p style="font-size:.8rem;color:var(--txt2);line-height:1.7">A Canadian municipality with 500+ endpoints, SCADA-controlled water systems, and citizen data. OmniaGuard provides sovereign data residency, OT protection, and automated compliance reporting for provincial audits.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-ct" id="tab-empire">
+            <div class="g2" style="gap:2rem;align-items:start">
+                <div>
+                    <h2 style="font-size:1.5rem;font-weight:800;margin-bottom:1rem">Empire — Multi-Entity Governance</h2>
+                    <p style="font-size:.9rem;color:var(--txt2);line-height:1.7;margin-bottom:1.5rem">For holding companies and conglomerates managing multiple subsidiaries. Cross-entity security governance with dedicated agents per company — all unified under one command layer.</p>
+                    <ul style="list-style:none;display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.5rem">
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> 17-company (or more) unified coverage</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Cross-entity security governance dashboard</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Dedicated security agent per subsidiary</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> AI agent hardening (Zero Prompt Injection)</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Dedicated CSM + quarterly red team</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Cyber insurance partnership integration</li>
+                        <li style="font-size:.85rem;color:var(--txt2);display:flex;gap:.5rem"><span style="color:var(--accent)">✓</span> Full regulatory compliance (SOC2, ISO 42001, NIST AI RMF)</li>
+                    </ul>
+                    <a href="about.html#contact" class="btn btn-p btn-sm">Contact Empire Sales →</a>
+                </div>
+                <div class="card" style="padding:1.5rem;background:var(--bg2)">
+                    <h4 style="font-size:.9rem;font-weight:700;margin-bottom:.75rem;color:var(--accent)">Use Case: Francisco Holdings</h4>
+                    <p style="font-size:.8rem;color:var(--txt2);line-height:1.7">A holding company with 17 subsidiaries across SaaS, logistics, education, and privacy services. Each company has a dedicated OmniaGuard agent. Cross-entity threat intelligence flows in real-time. One breach attempt at Company A triggers hardening across all 16 others instantly.</p>
+                    <div style="margin-top:1rem;padding:.75rem;background:var(--bg3);border-radius:8px">
+                        <div style="font-size:.7rem;color:var(--accent);font-family:var(--mono);margin-bottom:.3rem">EMPIRE ADVANTAGE</div>
+                        <div style="font-size:.85rem;color:var(--txt)">Attack on one subsidiary = instant defense across all 17. <strong>Collective immunity through shared intelligence.</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></section>
+
+    <footer class="footer"><div class="footer-in"><div class="footer-bot"><small>&copy; 2025 OmniaGuard. All rights reserved.</small><small>A Francisco Holdings Inc. initiative &bull; Built in Canada 🇨🇦</small></div></div></footer>
+
+    <script>
+    function showTab(id){
+        document.querySelectorAll('.tab-ct').forEach(t=>t.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+        document.getElementById('tab-'+id).classList.add('active');
+        event.target.classList.add('active');
+    }
+    </script>
+</body>
+</html>

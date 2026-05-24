@@ -1,70 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 | OmniaGuard</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #0A0E1A;
-            color: #F0F4FF;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 2rem;
-        }
-        .container { max-width: 500px; }
-        .code {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 6rem;
-            font-weight: 900;
-            color: #00D4FF;
-            line-height: 1;
-            margin-bottom: 1rem;
-            text-shadow: 0 0 40px rgba(0, 212, 255, 0.3);
-        }
-        h1 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-        p {
-            color: #8892B0;
-            margin-bottom: 2rem;
-            line-height: 1.6;
-        }
-        a {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            background: #00D4FF;
-            color: #0A0E1A;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.9rem;
-            transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-        a:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
-        }
-    </style>
+    <link rel="icon" type="image/webp" href="assets/omniaguard-logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="code">404</div>
-        <h1>Threat Not Found</h1>
-        <p>The page you're looking for doesn't exist or has been moved. Our 14 agents have already scanned this location — nothing here.</p>
-        <a href="/">Return to Command Center</a>
+    <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem">
+        <div>
+            <div style="font-size:5rem;font-weight:900;color:var(--accent);font-family:var(--mono);line-height:1;margin-bottom:1rem">404</div>
+            <h1 style="font-size:1.5rem;font-weight:700;margin-bottom:.75rem">Page Not Found</h1>
+            <p style="font-size:.9rem;color:var(--txt2);margin-bottom:2rem;max-width:400px">The page you're looking for doesn't exist or has been moved. Our agents are investigating.</p>
+            <a href="index.html" class="btn btn-p">Return to Command Center</a>
+        </div>
     </div>
 </body>
 </html>

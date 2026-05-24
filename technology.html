@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology | OmniaGuard</title>
+    <meta name="description" content="OmniaGuard SDK architecture, agent swarm defense, and Zero Prompt Injection whitepaper. The Agentic Security Fabric explained.">
+    <link rel="icon" type="image/webp" href="assets/omniaguard-logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav"><div class="nav-in">
+        <a href="index.html" class="nav-logo"><img src="assets/omniaguard-logo.webp" alt="OmniaGuard"><b>Omnia<span>Guard</span></b></a>
+        <ul class="nav-links"><li><a href="devices.html">Devices</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="features.html">Features</a></li><li><a href="technology.html" class="active">Technology</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="about.html">Trust</a></li><li><a href="partners.html">Partners</a></li></ul>
+        <a href="pricing.html" class="nav-cta">Get Protected</a>
+        <button class="mobile-btn" onclick="document.getElementById('mn').style.display=document.getElementById('mn').style.display==='block'?'none':'block'" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div><div class="mobile-nav" id="mn"><a href="index.html">Home</a><a href="devices.html">Devices</a><a href="solutions.html">Solutions</a><a href="features.html">Features</a><a href="technology.html">Technology</a><a href="pricing.html">Pricing</a><a href="about.html">Trust</a><a href="partners.html">Partners</a></div></nav>
+
+    <div class="pg-hdr"><h1>Technology</h1><p>The Agentic Security Fabric — how 22+ autonomous agents defend your infrastructure without human lag.</p></div>
+
+    <!-- SDK Architecture -->
+    <section class="section" id="sdk">
+        <div class="section-in"><div class="section-hdr">
+            <span class="section-lbl">Architecture</span>
+            <h2 class="section-ttl">OmniaGuard SDK</h2>
+            <p class="section-dsc">A single SDK that deploys across all 17 companies. Each entity gets a dedicated security agent — all governed by the neural command layer.</p>
+        </div>
+        <div class="card" style="padding:2rem;max-width:800px;margin:0 auto">
+            <div style="font-family:var(--mono);font-size:.7rem;color:var(--accent);margin-bottom:1.5rem;text-align:center">OMNIAGUARD SDK ARCHITECTURE</div>
+            <div style="display:flex;flex-direction:column;gap:1rem">
+                <div style="background:var(--bg);border:1px solid var(--accent);border-radius:8px;padding:1rem;text-align:center">
+                    <div style="font-size:.75rem;font-weight:700;color:var(--accent)">NEURAL COMMAND LAYER</div>
+                    <div style="font-size:.7rem;color:var(--txt2);margin-top:.3rem">Cross-entity orchestration • Threat correlation • Consensus protocol</div>
+                </div>
+                <div style="display:flex;justify-content:center"><svg width="20" height="30" viewBox="0 0 20 30"><path d="M10 0 L10 20 M5 15 L10 20 L15 15" stroke="var(--accent)" fill="none" stroke-width="1.5"/></svg></div>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem">
+                    <div style="background:var(--bg);border:1px solid var(--border2);border-radius:6px;padding:.75rem;text-align:center"><div style="font-size:.65rem;font-weight:700;color:var(--txt)">Threat Detection</div><div style="font-size:.6rem;color:var(--txt3);margin-top:.2rem">8 agents</div></div>
+                    <div style="background:var(--bg);border:1px solid var(--border2);border-radius:6px;padding:.75rem;text-align:center"><div style="font-size:.65rem;font-weight:700;color:var(--txt)">Response & Remediation</div><div style="font-size:.6rem;color:var(--txt3);margin-top:.2rem">6 agents</div></div>
+                    <div style="background:var(--bg);border:1px solid var(--border2);border-radius:6px;padding:.75rem;text-align:center"><div style="font-size:.65rem;font-weight:700;color:var(--txt)">Intelligence & Deception</div><div style="font-size:.6rem;color:var(--txt3);margin-top:.2rem">5 agents</div></div>
+                </div>
+                <div style="display:flex;justify-content:center"><svg width="20" height="30" viewBox="0 0 20 30"><path d="M10 0 L10 20 M5 15 L10 20 L15 15" stroke="var(--accent)" fill="none" stroke-width="1.5"/></svg></div>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem">
+                    <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:.75rem;text-align:center"><div style="font-size:.65rem;font-weight:700;color:var(--txt)">Compliance Engine</div><div style="font-size:.6rem;color:var(--txt3);margin-top:.2rem">2 agents</div></div>
+                    <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:.75rem;text-align:center"><div style="font-size:.65rem;font-weight:700;color:var(--txt)">Governance & Audit</div><div style="font-size:.6rem;color:var(--txt3);margin-top:.2rem">1 agent</div></div>
+                </div>
+                <div style="display:flex;justify-content:center"><svg width="20" height="30" viewBox="0 0 20 30"><path d="M10 0 L10 20 M5 15 L10 20 L15 15" stroke="var(--accent)" fill="none" stroke-width="1.5"/></svg></div>
+                <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:1rem;text-align:center">
+                    <div style="font-size:.75rem;font-weight:700;color:var(--txt2)">PROTECTED ENTITIES</div>
+                    <div style="font-size:.65rem;color:var(--txt3);margin-top:.3rem">17 Companies • 8 Device Categories • Unlimited Endpoints</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Agent Swarm Defense -->
+    <section class="section section-alt">
+        <div class="section-in"><div class="section-hdr">
+            <span class="section-lbl">Core Technology</span>
+            <h2 class="section-ttl">Agent Swarm Defense</h2>
+            <p class="section-dsc">22+ specialized agents working in consensus — not a single AI, but a digital immune system.</p>
+        </div>
+        <div class="g3">
+            <div class="card" style="padding:1.5rem">
+                <h4 style="font-size:.9rem;font-weight:700;margin-bottom:.5rem;color:var(--accent)">Multi-Agent Consensus</h4>
+                <p style="font-size:.78rem;color:var(--txt2);line-height:1.6">No single agent can act alone. Critical decisions require consensus from multiple specialized agents — eliminating single points of failure and preventing prompt injection attacks.</p>
+            </div>
+            <div class="card" style="padding:1.5rem">
+                <h4 style="font-size:.9rem;font-weight:700;margin-bottom:.5rem;color:var(--accent)">Specialization Hierarchy</h4>
+                <p style="font-size:.78rem;color:var(--txt2);line-height:1.6">Each agent is an expert in one domain: network, endpoint, email, cloud, IoT, browser, identity, or deception. Together they cover every attack surface with depth impossible for a single system.</p>
+            </div>
+            <div class="card" style="padding:1.5rem">
+                <h4 style="font-size:.9rem;font-weight:700;margin-bottom:.5rem;color:var(--accent)">Cross-Entity Learning</h4>
+                <p style="font-size:.78rem;color:var(--txt2);line-height:1.6">When one company is attacked, all 17 learn instantly. Threat patterns, IOCs, and behavioral signatures propagate across the entire ecosystem in real-time — collective immunity.</p>
+            </div>
+            <div class="card" style="padding:1.5rem">
+                <h4 style="font-size:.9rem;font-weight:700;margin-bottom:.5rem;color:var(--accent)">Zero Trust by Default</h4>
+                <p style="font-size:.78rem;color:var(--txt2);line-height:1.6">Every action, every request, every data flow is verified independently. No inherited trust. No assumed permissions. Every agent earns trust through cryptographic proof of intent.</p>
+            </div>
+            <div class="card" style="padding:1.5rem">
+                <h4 style="font-size:.9rem;font-weight:700;margin-bottom:.5rem;color:var(--accent)">Autonomous Response</h4>
+                <p style="font-size:.78rem;color:var(--txt2);line-height:1.6">Sub-12ms response time. When a threat is detected, agents respond autonomously — isolating endpoints, blocking IPs, revoking credentials — without waiting for human approval.</p>
+            </div>
+            <div class="card" style="padding:1.5rem">
+                <h4 style="font-size:.9rem;font-weight:700;margin-bottom:.5rem;color:var(--accent)">Self-Healing Architecture</h4>
+                <p style="font-size:.78rem;color:var(--txt2);line-height:1.6">If an agent is compromised or fails, the swarm detects it instantly, quarantines the affected agent, and redistributes its responsibilities — maintaining full coverage without downtime.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Whitepaper -->
+    <section class="section" id="whitepaper">
+        <div class="section-in" style="max-width:700px;text-align:center">
+            <span class="section-lbl">Research</span>
+            <h2 class="section-ttl">Zero Prompt Injection Whitepaper</h2>
+            <p class="section-dsc" style="margin-bottom:2rem">Our foundational research paper on preventing AI manipulation in multi-agent systems. The consensus protocol that makes OmniaGuard impossible to subvert.</p>
+            <div class="card" style="padding:2rem;text-align:left">
+                <h4 style="font-size:1rem;font-weight:700;margin-bottom:.5rem">Abstract</h4>
+                <p style="font-size:.82rem;color:var(--txt2);line-height:1.7;margin-bottom:1rem">We present a novel multi-agent consensus protocol that eliminates prompt injection vulnerabilities in autonomous AI security systems. By requiring cryptographic verification of intent across independent agent instances, we achieve zero-trust execution without sacrificing response latency. Our approach is validated across 17 production deployments protecting heterogeneous infrastructure.</p>
+                <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.5rem">
+                    <div style="font-size:.7rem;color:var(--txt3);padding:.3rem .6rem;background:var(--bg);border-radius:4px">Multi-Agent Systems</div>
+                    <div style="font-size:.7rem;color:var(--txt3);padding:.3rem .6rem;background:var(--bg);border-radius:4px">Prompt Injection</div>
+                    <div style="font-size:.7rem;color:var(--txt3);padding:.3rem .6rem;background:var(--bg);border-radius:4px">Consensus Protocol</div>
+                    <div style="font-size:.7rem;color:var(--txt3);padding:.3rem .6rem;background:var(--bg);border-radius:4px">Zero Trust</div>
+                </div>
+                <div style="display:flex;gap:1rem;flex-wrap:wrap">
+                    <a href="#" class="btn btn-p btn-sm" onclick="alert('Whitepaper download coming soon. Contact sales for early access.');return false;">Download PDF</a>
+                    <a href="about.html#contact" class="btn btn-s btn-sm">Request Early Access</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="section section-alt">
+        <div class="section-in"><div class="section-hdr">
+            <span class="section-lbl">Infrastructure</span>
+            <h2 class="section-ttl">Built on Proven Technology</h2>
+        </div>
+        <div class="g4">
+            <div style="text-align:center;padding:1rem">
+                <div style="font-size:1.5rem;margin-bottom:.4rem">🐍</div>
+                <div style="font-size:.8rem;font-weight:600">Python / FastAPI</div>
+                <div style="font-size:.68rem;color:var(--txt3)">Agent orchestration</div>
+            </div>
+            <div style="text-align:center;padding:1rem">
+                <div style="font-size:1.5rem;margin-bottom:.4rem">🦀</div>
+                <div style="font-size:.8rem;font-weight:600">Rust</div>
+                <div style="font-size:.68rem;color:var(--txt3)">Performance-critical paths</div>
+            </div>
+            <div style="text-align:center;padding:1rem">
+                <div style="font-size:1.5rem;margin-bottom:.4rem">☁️</div>
+                <div style="font-size:.8rem;font-weight:600">Kubernetes</div>
+                <div style="font-size:.68rem;color:var(--txt3)">Multi-cloud deployment</div>
+            </div>
+            <div style="text-align:center;padding:1rem">
+                <div style="font-size:1.5rem;margin-bottom:.4rem">🔐</div>
+                <div style="font-size:.8rem;font-weight:600">TLS 1.3 / mTLS</div>
+                <div style="font-size:.68rem;color:var(--txt3)">End-to-end encryption</div>
+            </div>
+            <div style="text-align:center;padding:1rem">
+                <div style="font-size:1.5rem;margin-bottom:.4rem">📊</div>
+                <div style="font-size:.8rem;font-weight:600">ClickHouse</div>
+                <div style="font-size:.68rem;color:var(--txt3)">Real-time analytics</div>
+            </div>
+            <div style="text-align:center;padding:1rem">
+                <div style="font-size:1.5rem;margin-bottom:.4rem">🧠</div>
+                <div style="font-size:.8rem;font-weight:600">Custom LLMs</div>
+                <div style="font-size:.68rem;color:var(--txt3)">Threat intelligence</div>
+            </div>
+            <div style="text-align:center;padding:1rem">
+                <div style="font-size:1.5rem;margin-bottom:.4rem">🇨🇦</div>
+                <div style="font-size:.8rem;font-weight:600">Canadian DC</div>
+                <div style="font-size:.68rem;color:var(--txt3)">Sovereign hosting</div>
+            </div>
+            <div style="text-align:center;padding:1rem">
+                <div style="font-size:1.5rem;margin-bottom:.4rem">🤖</div>
+                <div style="font-size:.8rem;font-weight:600">Telegram Bot API</div>
+                <div style="font-size:.68rem;color:var(--txt3)">@OmniguardSec_bot</div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="footer-in"><div class="footer-bot"><small>&copy; 2025 OmniaGuard. All rights reserved.</small><small>A Francisco Holdings Inc. initiative &bull; Built in Canada 🇨🇦</small></div></div></footer>
+</body>
+</html>
