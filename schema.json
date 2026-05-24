@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "OmniaGuard",
+  "description": "OmniaGuard \u2014 AI Security Platform. Zero Prompt Injection for Agentic AI. 14 autonomous security agents protecting enterprise systems.",
+  "url": "https://omniaguard.com",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "99",
+    "highPrice": "2499"
+  }
+}
