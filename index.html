@@ -3,1491 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OmniaGuard | Autonomous AI Cybersecurity Platform</title>
-    <meta name="description" content="14 specialized AI agents working in consensus. Not one tool — a digital immune system that learns, adapts, and never sleeps.">
-    <meta name="keywords" content="AI cybersecurity, autonomous security, multi-agent, zero-trust, threat detection, OmniaGuard">
-    <meta name="author" content="Francisco Holdings">
-    <meta property="og:title" content="OmniaGuard | Autonomous AI Cybersecurity Platform">
-    <meta property="og:description" content="14 AI agents. Zero-trust architecture. 24/7 autonomous defense.">
+    <title>OmniaGuard | Full-Spectrum Cybersecurity Platform</title>
+    <meta name="description" content="The world's first Agentic Security Fabric — 22 autonomous defenders, one neural command layer, zero human lag. Protecting every device, every vector, everywhere.">
+    <meta name="keywords" content="cybersecurity, AI security, endpoint protection, EDR, zero trust, autonomous defense, OmniaGuard, agentic security">
+    <meta property="og:title" content="OmniaGuard | Full-Spectrum Cybersecurity Platform">
+    <meta property="og:description" content="22+ autonomous AI agents protecting every digital surface. The world's first Agentic Security Fabric.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://franciscoderek7.github.io/omniaguard/">
+    <meta property="og:image" content="https://franciscoderek7.github.io/omniaguard/assets/omniaguard-logo.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/webp" href="assets/omniaguard-logo.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        /* ============================================
-           OmniaGuard Landing Page
-           Design: Dark Cybernetic Command Center
-           Colors: Deep Navy #0A0E1A, Cyan #00D4FF, 
-                   Slate #1A1F35, White #F0F4FF
-           ============================================ */
-
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --bg-primary: #0A0E1A;
-            --bg-secondary: #0F1424;
-            --bg-card: #141A2E;
-            --bg-card-hover: #1A2140;
-            --accent: #00D4FF;
-            --accent-dim: rgba(0, 212, 255, 0.15);
-            --accent-glow: rgba(0, 212, 255, 0.4);
-            --text-primary: #F0F4FF;
-            --text-secondary: #8892B0;
-            --text-muted: #5A6380;
-            --border: rgba(0, 212, 255, 0.12);
-            --border-hover: rgba(0, 212, 255, 0.3);
-            --gradient-hero: linear-gradient(135deg, #0A0E1A 0%, #0F1424 50%, #0A1628 100%);
-            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
-            --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
-            --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
-        }
-
-        html {
-            scroll-behavior: smooth;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        body {
-            font-family: var(--font-sans);
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* ===== NAVIGATION ===== */
-        .nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: 1rem 2rem;
-            background: rgba(10, 14, 26, 0.85);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border);
-            transition: all 0.3s var(--ease-out);
-        }
-
-        .nav-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .nav-logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            text-decoration: none;
-        }
-
-        .nav-logo-icon {
-            width: 36px;
-            height: 36px;
-            position: relative;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .nav-logo-icon img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .nav-logo-icon svg {
-            width: 100%;
-            height: 100%;
-        }
-
-        .nav-logo-text {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            letter-spacing: -0.02em;
-        }
-
-        .nav-logo-text span {
-            color: var(--accent);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.875rem;
-            font-weight: 500;
-            transition: color 0.2s var(--ease-out);
-            position: relative;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent);
-            transition: width 0.3s var(--ease-out);
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .nav-cta {
-            padding: 0.5rem 1.25rem;
-            background: transparent;
-            border: 1px solid var(--accent);
-            color: var(--accent);
-            border-radius: 6px;
-            font-size: 0.875rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.2s var(--ease-out);
-        }
-
-        .nav-cta:hover {
-            background: var(--accent);
-            color: var(--bg-primary);
-            box-shadow: 0 0 20px var(--accent-glow);
-        }
-
-        /* ===== HERO SECTION ===== */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            padding: 8rem 2rem 4rem;
-            background: var(--gradient-hero);
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 212, 255, 0.08) 0%, transparent 60%),
-                radial-gradient(ellipse 60% 40% at 80% 60%, rgba(0, 212, 255, 0.04) 0%, transparent 50%);
-            pointer-events: none;
-        }
-
-        /* Grid background */
-        .hero-grid {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: 
-                linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
-            background-size: 60px 60px;
-            mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 70%);
-            -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 70%);
-        }
-
-        /* Floating particles */
-        .particles {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            pointer-events: none;
-        }
-
-        .particle {
-            position: absolute;
-            width: 3px;
-            height: 3px;
-            background: var(--accent);
-            border-radius: 50%;
-            opacity: 0;
-            animation: float-particle 8s infinite;
-        }
-
-        .particle:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; }
-        .particle:nth-child(2) { left: 25%; top: 60%; animation-delay: 1.5s; }
-        .particle:nth-child(3) { left: 45%; top: 30%; animation-delay: 3s; }
-        .particle:nth-child(4) { left: 65%; top: 70%; animation-delay: 4.5s; }
-        .particle:nth-child(5) { left: 80%; top: 40%; animation-delay: 6s; }
-        .particle:nth-child(6) { left: 90%; top: 80%; animation-delay: 2s; }
-        .particle:nth-child(7) { left: 15%; top: 85%; animation-delay: 5s; }
-        .particle:nth-child(8) { left: 55%; top: 15%; animation-delay: 7s; }
-
-        @keyframes float-particle {
-            0%, 100% { opacity: 0; transform: translateY(0) scale(1); }
-            10% { opacity: 0.6; }
-            50% { opacity: 0.3; transform: translateY(-40px) scale(1.5); }
-            90% { opacity: 0.6; }
-        }
-
-        .hero-logo {
-            width: 180px;
-            height: 180px;
-            margin: 0 auto 2rem;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 0 60px rgba(0, 212, 255, 0.2), 0 0 120px rgba(0, 212, 255, 0.1);
-            animation: fade-up 0.6s var(--ease-out) forwards;
-        }
-
-        .hero-logo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            max-width: 900px;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.4rem 1rem;
-            background: var(--accent-dim);
-            border: 1px solid var(--border-hover);
-            border-radius: 100px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: var(--accent);
-            margin-bottom: 2rem;
-            font-family: var(--font-mono);
-            letter-spacing: 0.05em;
-        }
-
-        .hero-badge::before {
-            content: '';
-            width: 6px;
-            height: 6px;
-            background: var(--accent);
-            border-radius: 50%;
-            animation: pulse-dot 2s infinite;
-        }
-
-        @keyframes pulse-dot {
-            0%, 100% { opacity: 1; box-shadow: 0 0 0 0 var(--accent-glow); }
-            50% { opacity: 0.7; box-shadow: 0 0 0 6px transparent; }
-        }
-
-        .hero-title {
-            font-size: clamp(2.5rem, 6vw, 4.5rem);
-            font-weight: 900;
-            line-height: 1.05;
-            letter-spacing: -0.03em;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, #FFFFFF 0%, #B8C5E8 50%, #00D4FF 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-subtitle {
-            font-size: clamp(1.1rem, 2vw, 1.35rem);
-            color: var(--text-secondary);
-            max-width: 680px;
-            margin: 0 auto 2.5rem;
-            line-height: 1.7;
-            font-weight: 400;
-        }
-
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 3.5rem;
-            flex-wrap: wrap;
-        }
-
-        .hero-stat {
-            text-align: center;
-        }
-
-        .hero-stat-number {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--accent);
-            font-family: var(--font-mono);
-            line-height: 1;
-        }
-
-        .hero-stat-label {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-top: 0.5rem;
-            font-weight: 500;
-        }
-
-        .hero-actions {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn-primary {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.875rem 2rem;
-            background: var(--accent);
-            color: var(--bg-primary);
-            border: none;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            font-weight: 700;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 0.2s var(--ease-out);
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 0 40px rgba(0, 212, 255, 0.4);
-        }
-
-        .btn-primary:active {
-            transform: scale(0.97);
-        }
-
-        .btn-secondary {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.875rem 2rem;
-            background: transparent;
-            color: var(--text-primary);
-            border: 1px solid var(--border-hover);
-            border-radius: 8px;
-            font-size: 0.95rem;
-            font-weight: 600;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 0.2s var(--ease-out);
-        }
-
-        .btn-secondary:hover {
-            border-color: var(--accent);
-            background: var(--accent-dim);
-            transform: translateY(-2px);
-        }
-
-        /* ===== SECTIONS COMMON ===== */
-        .section {
-            padding: 6rem 2rem;
-            position: relative;
-        }
-
-        .section-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .section-label {
-            font-family: var(--font-mono);
-            font-size: 0.75rem;
-            font-weight: 500;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            margin-bottom: 1rem;
-            display: block;
-        }
-
-        .section-title {
-            font-size: clamp(1.75rem, 4vw, 2.75rem);
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-
-        .section-desc {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto;
-            line-height: 1.7;
-        }
-
-        /* ===== AGENTS SECTION ===== */
-        .agents-section {
-            background: var(--bg-secondary);
-        }
-
-        .agents-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 1.25rem;
-        }
-
-        .agent-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.5rem;
-            transition: all 0.3s var(--ease-out);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .agent-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent);
-            opacity: 0;
-            transition: opacity 0.3s var(--ease-out);
-        }
-
-        .agent-card:hover {
-            border-color: var(--border-hover);
-            background: var(--bg-card-hover);
-            transform: translateY(-4px);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-        }
-
-        .agent-card:hover::before {
-            opacity: 1;
-        }
-
-        .agent-number {
-            font-family: var(--font-mono);
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            margin-bottom: 0.75rem;
-            letter-spacing: 0.1em;
-        }
-
-        .agent-icon {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--accent-dim);
-            border-radius: 10px;
-            margin-bottom: 1rem;
-            font-size: 1.25rem;
-        }
-
-        .agent-name {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.4rem;
-        }
-
-        .agent-function {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            line-height: 1.5;
-        }
-
-        .agent-tag {
-            display: inline-block;
-            margin-top: 0.75rem;
-            padding: 0.2rem 0.6rem;
-            background: rgba(0, 212, 255, 0.08);
-            border: 1px solid rgba(0, 212, 255, 0.15);
-            border-radius: 4px;
-            font-size: 0.7rem;
-            font-family: var(--font-mono);
-            color: var(--accent);
-        }
-
-        /* ===== PRINCIPLES SECTION ===== */
-        .principles-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-        }
-
-        .principle-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 2.5rem;
-            position: relative;
-            transition: all 0.3s var(--ease-out);
-        }
-
-        .principle-card:hover {
-            border-color: var(--border-hover);
-            transform: translateY(-2px);
-        }
-
-        .principle-icon {
-            width: 56px;
-            height: 56px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--accent-dim);
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            margin-bottom: 1.5rem;
-            font-size: 1.5rem;
-        }
-
-        .principle-title {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-bottom: 0.75rem;
-            color: var(--text-primary);
-        }
-
-        .principle-desc {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 1.25rem;
-        }
-
-        .principle-features {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .principle-features li {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .principle-features li::before {
-            content: '';
-            width: 4px;
-            height: 4px;
-            background: var(--accent);
-            border-radius: 50%;
-            flex-shrink: 0;
-        }
-
-        /* ===== TECH STACK SECTION ===== */
-        .tech-section {
-            background: var(--bg-secondary);
-        }
-
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 1.25rem;
-        }
-
-        .tech-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.5rem;
-            text-align: center;
-            transition: all 0.3s var(--ease-out);
-        }
-
-        .tech-item:hover {
-            border-color: var(--border-hover);
-            transform: translateY(-2px);
-        }
-
-        .tech-item-icon {
-            font-size: 2rem;
-            margin-bottom: 0.75rem;
-            display: block;
-        }
-
-        .tech-item-name {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 0.25rem;
-        }
-
-        .tech-item-desc {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            font-family: var(--font-mono);
-        }
-
-        /* ===== OPERATIONS SECTION ===== */
-        .ops-timeline {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .ops-block {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.75rem;
-            position: relative;
-            transition: all 0.3s var(--ease-out);
-        }
-
-        .ops-block:hover {
-            border-color: var(--border-hover);
-        }
-
-        .ops-time {
-            font-family: var(--font-mono);
-            font-size: 0.75rem;
-            color: var(--accent);
-            margin-bottom: 0.75rem;
-            letter-spacing: 0.05em;
-        }
-
-        .ops-title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .ops-desc {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
-
-        /* ===== TELEGRAM SECTION ===== */
-        .telegram-section {
-            background: var(--bg-secondary);
-        }
-
-        .telegram-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1rem;
-        }
-
-        .telegram-cmd {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            padding: 1.25rem;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            transition: all 0.2s var(--ease-out);
-        }
-
-        .telegram-cmd:hover {
-            border-color: var(--border-hover);
-        }
-
-        .telegram-cmd-code {
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            color: var(--accent);
-            font-weight: 600;
-            white-space: nowrap;
-            min-width: 100px;
-        }
-
-        .telegram-cmd-desc {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-        }
-
-        /* ===== CTA SECTION ===== */
-        .cta-section {
-            text-align: center;
-            padding: 8rem 2rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-section::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(0, 212, 255, 0.06) 0%, transparent 60%);
-            pointer-events: none;
-        }
-
-        .cta-title {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            margin-bottom: 1rem;
-        }
-
-        .cta-desc {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            margin-bottom: 2.5rem;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .cta-actions {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        /* ===== SR&ED BADGE ===== */
-        .sred-section {
-            background: var(--bg-secondary);
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .sred-content {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .sred-badge {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 1rem 1.5rem;
-            background: var(--bg-card);
-            border: 1px solid rgba(0, 212, 255, 0.2);
-            border-radius: 12px;
-        }
-
-        .sred-badge-icon {
-            font-size: 1.5rem;
-        }
-
-        .sred-badge-text {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--text-primary);
-        }
-
-        .sred-badge-sub {
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            display: block;
-            margin-top: 0.2rem;
-        }
-
-        .sred-items {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-        }
-
-        .sred-item {
-            padding: 0.4rem 0.8rem;
-            background: var(--accent-dim);
-            border-radius: 6px;
-            font-size: 0.75rem;
-            font-family: var(--font-mono);
-            color: var(--accent);
-        }
-
-        /* ===== FOOTER ===== */
-        .footer {
-            padding: 3rem 2rem;
-            border-top: 1px solid var(--border);
-            background: var(--bg-primary);
-        }
-
-        .footer-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .footer-left {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .footer-logo-text {
-            font-weight: 700;
-            font-size: 1rem;
-            color: var(--text-primary);
-        }
-
-        .footer-logo-text span {
-            color: var(--accent);
-        }
-
-        .footer-center {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-
-        .footer-right {
-            display: flex;
-            gap: 1.5rem;
-            align-items: center;
-        }
-
-        .footer-link {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .footer-link:hover {
-            color: var(--accent);
-        }
-
-        .footer-attribution {
-            text-align: center;
-            margin-top: 2rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--border);
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            letter-spacing: 0.05em;
-        }
-
-        /* ===== MOBILE MENU ===== */
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--text-primary);
-            cursor: pointer;
-            padding: 0.5rem;
-        }
-
-        .mobile-menu-btn svg {
-            width: 24px;
-            height: 24px;
-        }
-
-        /* ===== ANIMATIONS ===== */
-        @keyframes fade-up {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .animate-in {
-            animation: fade-up 0.6s var(--ease-out) forwards;
-            opacity: 0;
-        }
-
-        .animate-delay-1 { animation-delay: 0.1s; }
-        .animate-delay-2 { animation-delay: 0.2s; }
-        .animate-delay-3 { animation-delay: 0.3s; }
-        .animate-delay-4 { animation-delay: 0.4s; }
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .nav-cta {
-                display: none;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-            }
-
-            .hero {
-                padding: 6rem 1.5rem 3rem;
-                min-height: auto;
-            }
-
-            .hero-stats {
-                gap: 1.5rem;
-            }
-
-            .hero-stat-number {
-                font-size: 2rem;
-            }
-
-            .section {
-                padding: 4rem 1.5rem;
-            }
-
-            .agents-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .principles-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .tech-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .ops-timeline {
-                grid-template-columns: 1fr;
-            }
-
-            .telegram-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-inner {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .sred-content {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-title {
-                font-size: 2rem;
-            }
-
-            .tech-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        /* ===== SCROLL ANIMATIONS ===== */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s var(--ease-out);
-        }
-
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Scanline effect on hero */
-        .scanline {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--accent-glow), transparent);
-            animation: scan 6s linear infinite;
-            opacity: 0.3;
-        }
-
-        @keyframes scan {
-            0% { top: 0; }
-            100% { top: 100%; }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-inner">
-            <a href="#" class="nav-logo">
-                <div class="nav-logo-icon">
-                    <img src="assets/omniaguard-logo.webp" alt="OmniaGuard">
-                </div>
-                <span class="nav-logo-text">Omnia<span>Guard</span></span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#agents">Agents</a></li>
-                <li><a href="#principles">Architecture</a></li>
-                <li><a href="#operations">Operations</a></li>
-                <li><a href="#tech">Stack</a></li>
-            </ul>
-            <a href="https://github.com/franciscoderek7/omniaguard" class="nav-cta" target="_blank" rel="noopener">View on GitHub</a>
-            <button class="mobile-menu-btn" aria-label="Menu">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M3 12h18M3 6h18M3 18h18"/>
-                </svg>
-            </button>
-        </div>
-    </nav>
+    <nav class="nav"><div class="nav-in">
+        <a href="index.html" class="nav-logo"><img src="assets/omniaguard-logo.webp" alt="OmniaGuard"><b>Omnia<span>Guard</span></b></a>
+        <ul class="nav-links">
+            <li><a href="devices.html">Devices</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="about.html">Trust</a></li>
+            <li><a href="partners.html">Partners</a></li>
+        </ul>
+        <a href="pricing.html" class="nav-cta">Get Protected</a>
+        <button class="mobile-btn" onclick="document.getElementById('mn').style.display=document.getElementById('mn').style.display==='block'?'none':'block'" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+    <div class="mobile-nav" id="mn">
+        <a href="devices.html">Devices</a><a href="solutions.html">Solutions</a><a href="features.html">Features</a>
+        <a href="technology.html">Technology</a><a href="pricing.html">Pricing</a><a href="about.html">Trust</a><a href="partners.html">Partners</a>
+    </div></nav>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-grid"></div>
-        <div class="scanline"></div>
-        <div class="particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-logo">
-                <img src="assets/omniaguard-logo.webp" alt="OmniaGuard - Autonomous AI Cybersecurity">
+        <div class="hero-grid"></div><div class="scanline"></div>
+        <div class="hero-ct">
+            <div class="hero-logo anim"><img src="assets/omniaguard-logo.webp" alt="OmniaGuard"></div>
+            <div class="hero-badge anim d1">AGENTIC SECURITY FABRIC</div>
+            <h1 class="hero-ttl anim d2">22 Autonomous Defenders.<br>One Neural Command Layer.<br>Zero Human Lag.</h1>
+            <p class="hero-sub anim d3">OmniaGuard secures every digital surface — from the smartphone in your pocket to the AI agent managing your enterprise. 17 companies. One impenetrable shield. Zero compromise.</p>
+            <div class="hero-actions anim d4">
+                <a href="pricing.html" class="btn btn-p">Start Free Trial</a>
+                <a href="features.html" class="btn btn-s">Explore Platform</a>
             </div>
-            <div class="hero-badge animate-in">AUTONOMOUS DEFENSE NETWORK</div>
-            <h1 class="hero-title animate-in animate-delay-1">Your Digital<br>Immune System</h1>
-            <p class="hero-subtitle animate-in animate-delay-2">14 specialized AI agents working in consensus — not one tool, but a distributed intelligence network that learns, adapts, and never sleeps.</p>
-            <div class="hero-actions animate-in animate-delay-3">
-                <a href="https://github.com/franciscoderek7/omniaguard" class="btn-primary" target="_blank" rel="noopener">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                    Deploy Now
-                </a>
-                <a href="#agents" class="btn-secondary">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    Explore Agents
-                </a>
-            </div>
-            <div class="hero-stats animate-in animate-delay-4">
-                <div class="hero-stat">
-                    <div class="hero-stat-number">14</div>
-                    <div class="hero-stat-label">AI Agents</div>
-                </div>
-                <div class="hero-stat">
-                    <div class="hero-stat-number">24/7</div>
-                    <div class="hero-stat-label">Autonomous Ops</div>
-                </div>
-                <div class="hero-stat">
-                    <div class="hero-stat-number">0</div>
-                    <div class="hero-stat-label">Trust Assumed</div>
-                </div>
-                <div class="hero-stat">
-                    <div class="hero-stat-number">∞</div>
-                    <div class="hero-stat-label">Threat Coverage</div>
-                </div>
+            <div class="hero-stats anim d4">
+                <div class="hero-stat"><b>22+</b><small>AI Agents</small></div>
+                <div class="hero-stat"><b>17</b><small>Companies</small></div>
+                <div class="hero-stat"><b>8</b><small>Device Types</small></div>
+                <div class="hero-stat"><b>0</b><small>Trust Assumed</small></div>
+                <div class="hero-stat"><b>24/7</b><small>Autonomous</small></div>
             </div>
         </div>
     </section>
 
-    <!-- Agents Section -->
-    <section class="section agents-section" id="agents">
-        <div class="section-inner">
-            <div class="section-header reveal">
-                <span class="section-label">Multi-Agent Architecture</span>
-                <h2 class="section-title">14 Autonomous Security Agents</h2>
-                <p class="section-desc">Each agent is a specialist. Together, they form a consensus-driven defense network where no single point of failure exists.</p>
-            </div>
-            <div class="agents-grid">
-                <div class="agent-card reveal">
-                    <div class="agent-number">AGENT_01</div>
-                    <div class="agent-icon">🔍</div>
-                    <div class="agent-name">Network Scanner</div>
-                    <div class="agent-function">Port/service discovery across all network segments</div>
-                    <div class="agent-tag">Hidden Backdoors</div>
-                </div>
-                <div class="agent-card reveal">
-                    <div class="agent-number">AGENT_02</div>
-                    <div class="agent-icon">⚠️</div>
-                    <div class="agent-name">Vulnerability Assessor</div>
-                    <div class="agent-function">CVE matching and exploit path analysis</div>
-                    <div class="agent-tag">Known Exploits</div>
-                </div>
-                <div class="agent-card reveal">
-                    <div class="agent-number">AGENT_03</div>
-                    <div class="agent-icon">🌐</div>
-                    <div class="agent-name">Threat Intel</div>
-                    <div class="agent-function">OSINT feeds and emerging attack pattern detection</div>
-                    <div class="agent-tag">Emerging Attacks</div>
-                </div>
-                <div class="agent-card reveal">
-                    <div class="agent-number">AGENT_04</div>
-                    <div class="agent-icon">📊</div>
-                    <div class="agent-name">Log Analyzer</div>
-                    <div class="agent-function">SIEM parsing with anomaly pattern recognition</div>
-                    <div class="agent-tag">Anomaly Patterns</div>
-                </div>
-                <div class="agent-card reveal">
-                    <div class="agent-number">AGENT_05</div>
-                    <div class="agent-icon">🚨</div>
-                    <div class="agent-name">Incident Responder</div>
-                    <div class="agent-function">Automated containment and breach escalation</div>
-                    <div class="agent-tag">Breach Escalation</div>
-                </div>
-                <div class="agent-card reveal">
-                    <div class="agent-number">AGENT_06</div>
-                    <div class="agent-icon">🎣</div>
-                    <div class="agent-name">Phishing Detector</div>
-                    <div class="agent-function">Email/URL analysis for social engineering attempts</div>
-                    <div class="agent-tag">Social Engineering</div>
-                </div>
-                <div class="agent-card reveal">
-                    <div class="agent-number">AGENT_07</div>
-                    <div class="agent-icon">🦠</div>
-                    <div class="agent-name">Malware Analyzer</div>
-                    <div class="agent-function">Static and dynamic analysis of suspicious binaries</div>
-                    <div class="agent-tag">Zero-Day Malware</div>
-                </div>
-                <div class="agent-card reveal">
-                    <div class="agent-number">AGENT_08</div>
-                    <div class="agent-icon">📋</div>
-                    <div class="agent-name">Compliance Auditor</div>
-                    <div class="agent-function">SOC2, ISO 27001, and regulatory gap analysis</div>
-                    <div class="agent-tag">Regulatory Gaps</div>
-                </div>
-                <div class="agent-card reveal">
-                    <div class="agent-number">AGENT_09</div>
-                    <div class="agent-icon">🔐</div>
-                    <div class="agent-name">Access Controller</div>
-                    <div class="agent-function">IAM enforcement and privilege escalation detection</div>
-                    <div class="agent-tag">Privilege Abuse</div>
-                </div>
-                <div class="agent-card reveal">
-                    <div class="agent-number">AGENT_10</div>
-                    <div class="agent-icon">🛡️</div>
-                    <div class="agent-name">Data Loss Preventer</div>
-                    <div class="agent-function">DLP monitoring for sensitive data exfiltration</div>
-                    <div class="agent-tag">Insider Threats</div>
-                </div>
-                <div class="agent-card reveal">
-                    <div class="agent-number">AGENT_11</div>
-                    <div class="agent-icon">💻</div>
-                    <div class="agent-name">Endpoint Protector</div>
-                    <div class="agent-function">EDR coverage and device compromise detection</div>
-                    <div class="agent-tag">Device Compromise</div>
-                </div>
-                <div class="agent-card reveal">
-                    <div class="agent-number">AGENT_12</div>
-                    <div class="agent-icon">☁️</div>
-                    <div class="agent-name">Cloud Guardian</div>
-                    <div class="agent-function">AWS, GCP, and Azure misconfiguration scanning</div>
-                    <div class="agent-tag">Misconfiguration</div>
-                </div>
-                <div class="agent-card reveal">
-                    <div class="agent-number">AGENT_13</div>
-                    <div class="agent-icon">🕵️</div>
-                    <div class="agent-name">Dark Web Monitor</div>
-                    <div class="agent-function">Credential leak detection and stolen data alerts</div>
-                    <div class="agent-tag">Stolen Data</div>
-                </div>
-                <div class="agent-card reveal">
-                    <div class="agent-number">AGENT_14</div>
-                    <div class="agent-icon">📄</div>
-                    <div class="agent-name">Report Generator</div>
-                    <div class="agent-function">Executive summaries and human-readable intelligence</div>
-                    <div class="agent-tag">Human-Readable Intel</div>
-                </div>
+    <!-- Devices We Protect -->
+    <section class="section" id="devices">
+        <div class="section-in"><div class="section-hdr">
+            <span class="section-lbl">Complete Coverage</span>
+            <h2 class="section-ttl">Devices We Protect</h2>
+            <p class="section-dsc">From personal smartphones to industrial IoT sensors — unified security across every digital touchpoint.</p>
+        </div>
+        <div class="g4">
+            <div class="dev-card"><span class="dev-icon">📱</span><div class="dev-name">Smartphones</div><div class="dev-desc">iOS & Android threat defense, app sandboxing, SMS phishing protection, biometric lock</div></div>
+            <div class="dev-card"><span class="dev-icon">💻</span><div class="dev-name">Laptops & Desktops</div><div class="dev-desc">Windows/Mac/Linux EDR, disk encryption, remote wipe, behavioral analysis</div></div>
+            <div class="dev-card"><span class="dev-icon">📟</span><div class="dev-name">Tablets</div><div class="dev-desc">Enterprise kiosk mode, field worker security, MDM integration</div></div>
+            <div class="dev-card"><span class="dev-icon">🔌</span><div class="dev-name">IoT Devices</div><div class="dev-desc">Smart home, industrial sensors, medical devices, automotive, wearables</div></div>
+            <div class="dev-card"><span class="dev-icon">☁️</span><div class="dev-name">Servers & Cloud</div><div class="dev-desc">AWS/Azure/GCP hardening, container security, Kubernetes, SIEM</div></div>
+            <div class="dev-card"><span class="dev-icon">🌐</span><div class="dev-name">Network</div><div class="dev-desc">Next-gen firewalls, DNS security, zero-trust architecture, SD-WAN</div></div>
+            <div class="dev-card"><span class="dev-icon">🔒</span><div class="dev-name">Web Browsers</div><div class="dev-desc">Extension security, credential vault, anti-fingerprinting, session isolation</div></div>
+            <div class="dev-card"><span class="dev-icon">✉️</span><div class="dev-name">Email Systems</div><div class="dev-desc">Phishing detection, spoofing prevention, attachment sandboxing, BEC protection</div></div>
+        </div>
+        <div style="text-align:center;margin-top:2.5rem"><a href="devices.html" class="btn btn-s btn-sm">View Detailed Specs →</a></div>
+        </div>
+    </section>
+
+    <!-- Differentiator Features -->
+    <section class="section section-alt" id="features">
+        <div class="section-in"><div class="section-hdr">
+            <span class="section-lbl">The Moat</span>
+            <h2 class="section-ttl">5 Features No One Else Has</h2>
+            <p class="section-dsc">Capabilities that make OmniaGuard the most advanced cybersecurity platform on the market.</p>
+        </div>
+        <div class="g3">
+            <div class="feat-card"><div class="feat-icon">🎯</div><div class="feat-name">Threat Radar</div><div class="feat-desc">Global threat intelligence network fed by 22+ agent sensors. Real-time IOC feed, dark web monitoring, APT tracking with visual threat map.</div><span class="feat-price">Enterprise: Included</span></div>
+            <div class="feat-card"><div class="feat-icon">⚔️</div><div class="feat-name">Red Cell</div><div class="feat-desc">AI-powered continuous automated attack simulation. Never-sleeping penetration testing that finds gaps before attackers do.</div><span class="feat-price">Add-on: +$199/mo</span></div>
+            <div class="feat-card"><div class="feat-icon">👻</div><div class="feat-name">ShadowGrid Deception</div><div class="feat-desc">Deploy decoy assets — fake databases, credentials, servers. Trap attackers, feed intel to agents, turn breaches into learning events.</div><span class="feat-price">Enterprise: Included</span></div>
+            <div class="feat-card"><div class="feat-icon">🔗</div><div class="feat-name">VendorGuard</div><div class="feat-desc">Continuous third-party risk scoring. Post-SolarWinds vendor monitoring with auto-alerts when vendor security degrades.</div><span class="feat-price">Enterprise: Included</span></div>
+            <div class="feat-card"><div class="feat-icon">📋</div><div class="feat-name">Compliance Automation</div><div class="feat-desc">Real-time SOC2, ISO 27001, PCI-DSS, GDPR scoring. Auto-evidence collection and audit-ready reports with Green/Yellow/Red dashboard.</div><span class="feat-price">Professional+: Included</span></div>
+            <div class="feat-card"><div class="feat-icon">🛡️</div><div class="feat-name">Zero Prompt Injection</div><div class="feat-desc">Patented guarantee against AI manipulation. Every agent action verified independently — no implicit trust, no inherited permissions.</div><span class="feat-price">All Tiers: Included</span></div>
+        </div>
+        <div style="text-align:center;margin-top:2.5rem"><a href="features.html" class="btn btn-p btn-sm">Explore All Features →</a></div>
+        </div>
+    </section>
+
+    <!-- 17-Company Empire Shield -->
+    <section class="section" id="empire">
+        <div class="section-in"><div class="section-hdr">
+            <span class="section-lbl">The Omnia Shield</span>
+            <h2 class="section-ttl">17-Company Security Ecosystem</h2>
+            <p class="section-dsc">One SDK protecting an entire business empire. Each entity has a dedicated security agent — all governed by the OmniaGuard neural command layer.</p>
+        </div>
+        <div class="emp-grid">
+            <div class="emp-card emp-parent"><h4>Francisco Holdings Inc.</h4><div class="agent">PARENT — CORPORATE GOVERNANCE AGENT</div><p>All 17 entities protected by OmniaGuard SDK with Zero Prompt Injection Guarantee</p></div>
+            <div class="emp-card"><h4>OmniaGuard</h4><div class="agent">22+ Security Agents</div><p>Self-referential security — protects itself and all others</p></div>
+            <div class="emp-card"><h4>CleanSwarm</h4><div class="agent">CleanSwarm Security Agent</div><p>Data encryption, PII protection, PCI compliance</p></div>
+            <div class="emp-card"><h4>CCLDR.net</h4><div class="agent">CCLDR Shield Agent</div><p>Anonymity protocols, visitor privacy, content isolation</p></div>
+            <div class="emp-card"><h4>Sovereignty Privacy</h4><div class="agent">Sovereignty Vault Agent</div><p>GDPR/CCPA automation, dark web monitoring, takedowns</p></div>
+            <div class="emp-card"><h4>SupplyChain Pro</h4><div class="agent">ChainLock Agent</div><p>Route encryption, identity protection, cargo tracking</p></div>
+            <div class="emp-card"><h4>Companies 7–17</h4><div class="agent">Pre-Secured Pipeline</div><p>Future verticals — all pre-secured from day zero</p></div>
+        </div></div>
+    </section>
+
+    <!-- Pricing Teaser -->
+    <section class="section section-alt" id="pricing">
+        <div class="section-in"><div class="section-hdr">
+            <span class="section-lbl">Transparent Pricing</span>
+            <h2 class="section-ttl">Protection for Every Scale</h2>
+            <p class="section-dsc">From personal devices to multi-company empires — security that grows with you.</p>
+        </div>
+        <div class="price-grid">
+            <div class="price-card"><div class="price-tier">Starter</div><div class="price-name">Personal</div><div class="price-amt">$9.99</div><div class="price-sub">per month</div>
+                <ul class="price-list"><li>5 devices</li><li>Identity monitoring</li><li>Dark web alerts</li><li>Basic Threat Radar</li><li>Mobile defense</li></ul>
+                <a href="pricing.html" class="btn btn-s btn-sm" style="width:100%;justify-content:center">Choose Plan</a></div>
+            <div class="price-card pop" style="position:relative"><div class="price-tier">Growth</div><div class="price-name">Professional</div><div class="price-amt">$29.99</div><div class="price-sub">per month</div>
+                <ul class="price-list"><li>25 devices</li><li>Business email protection</li><li>Cloud backup</li><li>Compliance scoring</li><li>Red Cell Lite</li><li>Priority support</li></ul>
+                <a href="pricing.html" class="btn btn-p btn-sm" style="width:100%;justify-content:center">Choose Plan</a></div>
+            <div class="price-card"><div class="price-tier">Scale</div><div class="price-name">Enterprise</div><div class="price-amt">$499</div><div class="price-sub">per 100 devices/mo</div>
+                <ul class="price-list"><li>Unlimited devices</li><li>Full Threat Radar</li><li>Red Cell + ShadowGrid</li><li>VendorGuard</li><li>24/7 SOC chat</li><li>1-hour SLA</li></ul>
+                <a href="pricing.html" class="btn btn-s btn-sm" style="width:100%;justify-content:center">Contact Sales</a></div>
+            <div class="price-card"><div class="price-tier">Dominion</div><div class="price-name">Empire</div><div class="price-amt">$2,499+</div><div class="price-sub">per month</div>
+                <ul class="price-list"><li>17-company coverage</li><li>Cross-entity governance</li><li>AI agent hardening</li><li>Dedicated CSM</li><li>Quarterly red team</li><li>Cyber insurance</li></ul>
+                <a href="pricing.html" class="btn btn-s btn-sm" style="width:100%;justify-content:center">Contact Sales</a></div>
+        </div>
+        <p style="text-align:center;margin-top:1.5rem;font-size:.8rem;color:var(--txt3)">Annual billing: 2 months free. All plans include Zero Prompt Injection Guarantee.</p>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="section">
+        <div class="section-in"><div class="section-hdr">
+            <span class="section-lbl">Compliance & Certifications</span>
+            <h2 class="section-ttl">Trusted by Design</h2>
+        </div>
+        <div class="trust-row">
+            <div class="trust-badge">🛡️ SOC 2 Type II</div>
+            <div class="trust-badge">📋 ISO 27001</div>
+            <div class="trust-badge">🤖 ISO 42001 (AI)</div>
+            <div class="trust-badge">🏛️ NIST AI RMF</div>
+            <div class="trust-badge">🇨🇦 Canadian Data Residency</div>
+            <div class="trust-badge">🔐 Zero Prompt Injection</div>
+        </div>
+        <div style="text-align:center;margin-top:1.5rem"><a href="about.html" class="btn btn-s btn-sm">View Trust Center →</a></div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-alt" style="text-align:center">
+        <div class="section-in">
+            <h2 class="section-ttl">Ready to Deploy Your Digital Immune System?</h2>
+            <p class="section-dsc" style="margin-bottom:2rem">22+ AI agents start protecting your infrastructure in minutes. No human lag. No gaps. No compromise.</p>
+            <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+                <a href="pricing.html" class="btn btn-p">Start Free Trial</a>
+                <a href="about.html#contact" class="btn btn-s">Talk to Security Expert</a>
             </div>
         </div>
     </section>
 
-    <!-- Core Principles Section -->
-    <section class="section" id="principles">
-        <div class="section-inner">
-            <div class="section-header reveal">
-                <span class="section-label">Security Architecture</span>
-                <h2 class="section-title">Core Security Principles</h2>
-                <p class="section-desc">Built on three pillars that ensure no single point of failure, no implicit trust, and no downtime.</p>
+    <footer class="footer"><div class="footer-in">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo" style="margin-bottom:.4rem"><img src="assets/omniaguard-logo.webp" alt="OmniaGuard"><b>Omnia<span>Guard</span></b></a>
+                <p>Full-spectrum cybersecurity for every device, every vector, everywhere. Autonomous AI defense built in Canada.</p>
             </div>
-            <div class="principles-grid">
-                <div class="principle-card reveal">
-                    <div class="principle-icon">🔒</div>
-                    <h3 class="principle-title">Zero-Trust Authorization Engine</h3>
-                    <p class="principle-desc">Every agent action must prove its legitimacy. No implicit trust. No inherited permissions. Every request is verified independently.</p>
-                    <ul class="principle-features">
-                        <li>Per-action authorization verification</li>
-                        <li>Time-bounded permission grants</li>
-                        <li>Automatic prompt injection detection</li>
-                        <li>Failed attempts logged and trigger alerts</li>
-                    </ul>
-                </div>
-                <div class="principle-card reveal">
-                    <div class="principle-icon">🤝</div>
-                    <h3 class="principle-title">Multi-Agent Consensus Protocol</h3>
-                    <p class="principle-desc">No single agent decides. Critical actions require cross-verification from multiple specialized agents before execution.</p>
-                    <ul class="principle-features">
-                        <li>Independent threat severity voting</li>
-                        <li>Critical classifications require 3+ agreement</li>
-                        <li>Dissenting opinions logged for audit</li>
-                        <li>Weighted confidence by domain expertise</li>
-                    </ul>
-                </div>
-                <div class="principle-card reveal">
-                    <div class="principle-icon">⚡</div>
-                    <h3 class="principle-title">Autonomous 24/7 Operation</h3>
-                    <p class="principle-desc">Continuous scanning, analysis, and response around the clock. Morning briefings via Telegram tell you what happened overnight.</p>
-                    <ul class="principle-features">
-                        <li>Dark web scanning overnight (00:00–06:00)</li>
-                        <li>Log analysis and anomaly detection (06:00–12:00)</li>
-                        <li>Compliance checks and access reviews (12:00–18:00)</li>
-                        <li>Vulnerability scans and reporting (18:00–00:00)</li>
-                    </ul>
-                </div>
-            </div>
+            <div class="footer-col"><h5>Platform</h5><a href="devices.html">Devices</a><a href="features.html">Features</a><a href="technology.html">Technology</a><a href="pricing.html">Pricing</a></div>
+            <div class="footer-col"><h5>Company</h5><a href="about.html">Trust Center</a><a href="about.html#certifications">Certifications</a><a href="about.html#bug-bounty">Bug Bounty</a><a href="partners.html">Partners</a></div>
+            <div class="footer-col"><h5>Resources</h5><a href="technology.html#sdk">SDK Docs</a><a href="technology.html#whitepaper">Whitepaper</a><a href="https://github.com/franciscoderek7/omniaguard" target="_blank">GitHub</a><a href="#">Status</a></div>
         </div>
-    </section>
+        <div class="footer-bot">
+            <small>&copy; 2025 OmniaGuard. All rights reserved.</small>
+            <small>A Francisco Holdings Inc. initiative &bull; Built in Canada 🇨🇦</small>
+        </div>
+    </div></footer>
 
-    <!-- Operations Section -->
-    <section class="section tech-section" id="operations">
-        <div class="section-inner">
-            <div class="section-header reveal">
-                <span class="section-label">24/7 Autonomous Operations</span>
-                <h2 class="section-title">Never Sleeps. Always Watching.</h2>
-                <p class="section-desc">Scheduled operations ensure comprehensive coverage across all time zones and threat vectors.</p>
-            </div>
-            <div class="ops-timeline">
-                <div class="ops-block reveal">
-                    <div class="ops-time">00:00 — 06:00</div>
-                    <div class="ops-title">Deep Reconnaissance</div>
-                    <div class="ops-desc">Dark web scanning, threat intelligence updates, credential leak monitoring, and OSINT collection while your team sleeps.</div>
-                </div>
-                <div class="ops-block reveal">
-                    <div class="ops-time">06:00 — 12:00</div>
-                    <div class="ops-title">Analysis & Detection</div>
-                    <div class="ops-desc">Log analysis, anomaly detection, behavioral pattern matching, and morning Telegram briefing with overnight findings.</div>
-                </div>
-                <div class="ops-block reveal">
-                    <div class="ops-time">12:00 — 18:00</div>
-                    <div class="ops-title">Compliance & Access</div>
-                    <div class="ops-desc">SOC2/ISO compliance checks, access permission reviews, IAM auditing, and privilege escalation monitoring.</div>
-                </div>
-                <div class="ops-block reveal">
-                    <div class="ops-time">18:00 — 00:00</div>
-                    <div class="ops-title">Scanning & Reporting</div>
-                    <div class="ops-desc">Full vulnerability scans, executive report generation, patch recommendations, and next-day priority queue building.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tech Stack Section -->
-    <section class="section" id="tech">
-        <div class="section-inner">
-            <div class="section-header reveal">
-                <span class="section-label">Technology</span>
-                <h2 class="section-title">Built for Production</h2>
-                <p class="section-desc">Enterprise-grade stack designed for reliability, speed, and Canadian data residency.</p>
-            </div>
-            <div class="tech-grid">
-                <div class="tech-item reveal">
-                    <span class="tech-item-icon">🧠</span>
-                    <div class="tech-item-name">Together AI</div>
-                    <div class="tech-item-desc">Llama 3.1 70B</div>
-                </div>
-                <div class="tech-item reveal">
-                    <span class="tech-item-icon">🗄️</span>
-                    <div class="tech-item-name">Supabase</div>
-                    <div class="tech-item-desc">PostgreSQL</div>
-                </div>
-                <div class="tech-item reveal">
-                    <span class="tech-item-icon">🤖</span>
-                    <div class="tech-item-name">Telegram Bot</div>
-                    <div class="tech-item-desc">Command Interface</div>
-                </div>
-                <div class="tech-item reveal">
-                    <span class="tech-item-icon">🐳</span>
-                    <div class="tech-item-name">Docker</div>
-                    <div class="tech-item-desc">Containerized</div>
-                </div>
-                <div class="tech-item reveal">
-                    <span class="tech-item-icon">🐍</span>
-                    <div class="tech-item-name">Python 3.11+</div>
-                    <div class="tech-item-desc">Core Runtime</div>
-                </div>
-                <div class="tech-item reveal">
-                    <span class="tech-item-icon">🔗</span>
-                    <div class="tech-item-name">LangGraph</div>
-                    <div class="tech-item-desc">Agent Orchestration</div>
-                </div>
-                <div class="tech-item reveal">
-                    <span class="tech-item-icon">⚡</span>
-                    <div class="tech-item-name">FastAPI</div>
-                    <div class="tech-item-desc">API Layer</div>
-                </div>
-                <div class="tech-item reveal">
-                    <span class="tech-item-icon">🌐</span>
-                    <div class="tech-item-name">Porkbun DNS</div>
-                    <div class="tech-item-desc">omniaguard.com</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Telegram Commands Section -->
-    <section class="section telegram-section" id="telegram">
-        <div class="section-inner">
-            <div class="section-header reveal">
-                <span class="section-label">Command Interface</span>
-                <h2 class="section-title">Telegram Bot Commands</h2>
-                <p class="section-desc">Full control from your phone. Receive alerts, trigger scans, and get executive summaries — all through Telegram.</p>
-            </div>
-            <div class="telegram-grid">
-                <div class="telegram-cmd reveal">
-                    <span class="telegram-cmd-code">/scan &lt;target&gt;</span>
-                    <span class="telegram-cmd-desc">Run a full security scan on any target asset</span>
-                </div>
-                <div class="telegram-cmd reveal">
-                    <span class="telegram-cmd-code">/status</span>
-                    <span class="telegram-cmd-desc">System health check across all 14 agents</span>
-                </div>
-                <div class="telegram-cmd reveal">
-                    <span class="telegram-cmd-code">/alerts</span>
-                    <span class="telegram-cmd-desc">View all active security alerts and severity levels</span>
-                </div>
-                <div class="telegram-cmd reveal">
-                    <span class="telegram-cmd-code">/report</span>
-                    <span class="telegram-cmd-desc">Generate an executive summary of current posture</span>
-                </div>
-                <div class="telegram-cmd reveal">
-                    <span class="telegram-cmd-code">/breach &lt;email&gt;</span>
-                    <span class="telegram-cmd-desc">Check breach databases for compromised credentials</span>
-                </div>
-                <div class="telegram-cmd reveal">
-                    <span class="telegram-cmd-code">/monitor &lt;domain&gt;</span>
-                    <span class="telegram-cmd-desc">Add a domain to continuous monitoring queue</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SR&ED Section -->
-    <section class="section sred-section">
-        <div class="section-inner">
-            <div class="sred-content reveal">
-                <div class="sred-badge">
-                    <span class="sred-badge-icon">🇨🇦</span>
-                    <div>
-                        <span class="sred-badge-text">SR&amp;ED Eligible R&amp;D</span>
-                        <span class="sred-badge-sub">Canadian Scientific Research &amp; Experimental Development</span>
-                    </div>
-                </div>
-                <div class="sred-items">
-                    <span class="sred-item">Multi-Agent Consensus</span>
-                    <span class="sred-item">Zero-Trust AI Auth</span>
-                    <span class="sred-item">Prompt Injection Defense</span>
-                    <span class="sred-item">Autonomous Classification</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="section cta-section">
-        <div class="section-inner reveal">
-            <h2 class="cta-title">Ready to Deploy Your<br>Digital Immune System?</h2>
-            <p class="cta-desc">Clone the repo, configure your environment, and have 14 AI agents protecting your infrastructure in minutes.</p>
-            <div class="cta-actions">
-                <a href="https://github.com/franciscoderek7/omniaguard" class="btn-primary" target="_blank" rel="noopener">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                    Get Started on GitHub
-                </a>
-                <a href="mailto:francisco@omniaguard.com" class="btn-secondary">
-                    Contact Us
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-left">
-                <span class="footer-logo-text">Omnia<span>Guard</span></span>
-            </div>
-            <div class="footer-center">
-                Autonomous AI Cybersecurity &mdash; Distributed Threat Intelligence
-            </div>
-            <div class="footer-right">
-                <a href="https://github.com/franciscoderek7/omniaguard" class="footer-link" target="_blank" rel="noopener">GitHub</a>
-                <a href="#agents" class="footer-link">Agents</a>
-                <a href="#tech" class="footer-link">Stack</a>
-            </div>
-        </div>
-        <div class="footer-attribution">
-            A Francisco Holdings initiative &bull; Built in Canada 🇨🇦
-        </div>
-    </footer>
-
-    <!-- Scroll Reveal Script -->
     <script>
-        // Intersection Observer for scroll animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        });
-
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-        // Smooth scroll for nav links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // Nav background on scroll
-        const nav = document.querySelector('.nav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                nav.style.background = 'rgba(10, 14, 26, 0.95)';
-                nav.style.borderBottomColor = 'rgba(0, 212, 255, 0.15)';
-            } else {
-                nav.style.background = 'rgba(10, 14, 26, 0.85)';
-                nav.style.borderBottomColor = 'rgba(0, 212, 255, 0.12)';
-            }
-        });
+    const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis')}),{threshold:.1});
+    document.querySelectorAll('.card,.dev-card,.price-card,.emp-card,.feat-card').forEach(el=>{el.classList.add('reveal');obs.observe(el)});
     </script>
 </body>
 </html>
