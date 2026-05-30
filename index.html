@@ -1,235 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="OmniaGuard — AI Security Platform. Zero Prompt Injection for Agentic AI. Enterprise cybersecurity with 14 autonomous agents. Not affiliated with industrial safety products.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OmniaGuard — AI Security Platform | Constitutional Shield for Agentic AI</title>
-    <meta name="description" content="Zero Prompt Injection Guarantee. AI security for multi-agent systems. PIPEDA-compliant. First globally.">
-    <meta name="keywords" content="AI security, prompt injection defense, agentic AI governance, multi-agent protection, zero injection guarantee, OmniaGuard">
-    <meta property="og:title" content="OmniaGuard | Constitutional Shield for Agentic AI">
-    <meta property="og:description" content="Zero Prompt Injection Guarantee. 14 autonomous security agents. First globally.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://omniaguard.com/">
-    <meta property="og:image" content="https://omniaguard.com/assets/omniaguard-logo.webp">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" type="image/webp" href="assets/omniaguard-logo.webp">
+    <title>OMNIAGUARD — Constitutional Shield for Agentic AI</title>
+    <meta name="description" content="OmniaGuard secures every digital surface with 14 autonomous security agents. Zero Prompt Injection Guarantee.">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" media="print" onload="this.media='all'" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preload" href="assets/omniaguard-logo.webp" as="image">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="OmniaGuard — AI Security Platform. Zero Prompt Injection for Agentic AI. 14 autonomous security agents protecting enterprise systems.">
-    <meta name="keywords" content="ai security platform, prompt injection protection, ai agent security, llm security">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://omniaguard.com/">
-    <!-- Open Graph -->
-    <meta property="og:title" content="OmniaGuard — Ai Security Platform">
-    <meta property="og:description" content="OmniaGuard — AI Security Platform. Zero Prompt Injection for Agentic AI. 14 autonomous security agents protecting enterprise systems.">
-    <meta property="og:url" content="https://omniaguard.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="OmniaGuard">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="OmniaGuard — Ai Security Platform">
-    <meta name="twitter:description" content="OmniaGuard — AI Security Platform. Zero Prompt Injection for Agentic AI. 14 autonomous security agents protecting enterprise systems.">
-    <!-- Schema.org -->
-    <script type="application/ld+json">
-{
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "OmniaGuard",
-      "description": "OmniaGuard \u2014 AI Security Platform. Zero Prompt Injection for Agentic AI. 14 autonomous security agents protecting enterprise systems.",
-      "url": "https://omniaguard.com",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "offers": {
-            "@type": "AggregateOffer",
-            "priceCurrency": "USD",
-            "lowPrice": "99",
-            "highPrice": "2499"
-      }
-}
-    </script>
+    <style>
+        :root {
+            --bg-dark: #000000;
+            --chrome-silver: #C0C0C0;
+            --gold-accent: #D4AF37;
+            --red-accent: #FF0000;
+            --text-light: #FFFFFF;
+            --text-muted: #888888;
+            --glass: rgba(255, 255, 255, 0.05);
+            --border: rgba(255, 255, 255, 0.1);
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .futuristic {
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/349.jpg') center/cover no-repeat;
+            padding: 0 5%;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gold-accent);
+            font-weight: 700;
+            margin-bottom: 2rem;
+            letter-spacing: 0.1em;
+        }
+
+        .badge-guarantee {
+            display: inline-block;
+            padding: 10px 25px;
+            border: 2px solid var(--red-accent);
+            color: var(--red-accent);
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            background: rgba(255, 0, 0, 0.05);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+        }
+
+        /* Navigation */
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            font-size: 1.5rem;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span { color: var(--gold-accent); }
+
+        /* Features Section */
+        .features {
+            padding: 100px 5%;
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('images/350.jpg') center/cover fixed no-repeat;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 2.5rem;
+            color: var(--chrome-silver);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            padding: 40px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            border-color: var(--red-accent);
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--red-accent);
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--text-light);
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 5%;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            background: #000;
+        }
+
+        .footer-branding {
+            color: var(--gold-accent);
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: 0.1em;
+        }
+
+        .footer-copyright {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: transparent;
+            border: 1px solid var(--gold-accent);
+            color: var(--gold-accent);
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: var(--gold-accent);
+            color: var(--bg-dark);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .section-title { font-size: 1.8rem; }
+        }
+    </style>
 </head>
 <body>
-    <nav class="nav"><div class="nav-in">
-        <a href="index.html" class="nav-logo"><img src="assets/omniaguard-logo.webp" alt="OmniaGuard" width="32" height="32" loading="eager"><b>Omnia<span>Guard</span></b></a>
-        <ul class="nav-links">
-            <li><a href="devices.html">Devices</a></li>
-            <li><a href="solutions.html">Solutions</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="technology.html">Technology</a></li>
-            <li><a href="agents.html">Agents</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="about.html">Trust</a></li>
-            <li><a href="agents.html">Agents</a><a href="partners.html">Partners</a></li>
-        </ul>
-        <a href="pricing.html" class="nav-cta">Get Protected</a>
-        <button class="mobile-btn" onclick="document.getElementById('mn').style.display=document.getElementById('mn').style.display==='block'?'none':'block'" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
-    </div>
-    <div class="mobile-nav" id="mn">
-        <a href="devices.html">Devices</a><a href="solutions.html">Solutions</a><a href="features.html">Features</a>
-        <a href="technology.html">Technology</a><a href="pricing.html">Pricing</a><a href="about.html">Trust</a><a href="agents.html">Agents</a><a href="partners.html">Partners</a>
-    </div></nav>
+
+    <nav>
+        <div class="logo">OMNIA<span>GUARD</span></div>
+        <div class="nav-links">
+            <a href="#" class="btn" style="padding: 10px 20px; font-size: 0.7rem;">Deploy Shield</a>
+        </div>
+    </nav>
 
     <section class="hero">
-        <div class="hero-grid"></div><div class="scanline"></div>
-        <div class="hero-ct">
-            <div class="hero-logo anim"><img src="assets/omniaguard-logo.webp" alt="OmniaGuard" width="32" height="32" loading="eager"></div>
-            <div class="hero-badge anim d1">ZERO PROMPT INJECTION GUARANTEE</div>
-            <h1 class="hero-ttl anim d2">Constitutional Shield<br>for Agentic AI</h1>
-            <p class="hero-sub anim d3">OmniaGuard secures every digital surface — from the smartphone in your pocket to the server farm powering nations. 14 autonomous security agents. Agentic AI defense. Endpoint hardening. Network fortress. One shield. Zero compromise.</p>
-            <div class="hero-actions anim d4">
-                <a href="pricing.html" class="btn btn-p">Start Free Trial</a>
-                <a href="features.html" class="btn btn-s">Explore Platform</a>
+        <div class="badge-guarantee">ZERO PROMPT INJECTION GUARANTEE</div>
+        <h1>OMNIAGUARD</h1>
+        <p>Constitutional Shield for Agentic AI</p>
+        <a href="#features" class="btn">Explore Multi-Agent Defense</a>
+    </section>
+
+    <section class="features" id="features">
+        <h2 class="section-title">Multi-Agent Defense Pipelines</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                <h3>Autonomous Hardening</h3>
+                <p>14 specialized security agents continuously monitoring and hardening every digital surface in real-time.</p>
             </div>
-            <div class="hero-stats anim d4">
-                <div class="hero-stat"><b>14</b><small>AI Agents</small></div>
-                <div class="hero-stat"><b>17</b><small>Companies</small></div>
-                <div class="hero-stat"><b>8</b><small>Device Types</small></div>
-                <div class="hero-stat"><b>0</b><small>Trust Assumed</small></div>
-                <div class="hero-stat"><b>24/7</b><small>Autonomous</small></div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-microchip"></i></div>
+                <h3>Agentic AI Defense</h3>
+                <p>Protecting the neural core of your agentic workflows from malicious manipulation and prompt injection.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Devices We Protect -->
-    <section class="section" id="devices">
-        <div class="section-in"><div class="section-hdr">
-            <span class="section-lbl">Complete Coverage</span>
-            <h2 class="section-ttl">Devices We Protect</h2>
-            <p class="section-dsc">From personal smartphones to industrial IoT sensors — unified security across every digital touchpoint.</p>
-        </div>
-        <div class="g4">
-            <div class="dev-card"><span class="dev-icon">📱</span><div class="dev-name">Smartphones</div><div class="dev-desc">iOS & Android threat defense, app sandboxing, SMS phishing protection, biometric lock</div></div>
-            <div class="dev-card"><span class="dev-icon">💻</span><div class="dev-name">Laptops & Desktops</div><div class="dev-desc">Windows/Mac/Linux EDR, disk encryption, remote wipe, behavioral analysis</div></div>
-            <div class="dev-card"><span class="dev-icon">📟</span><div class="dev-name">Tablets</div><div class="dev-desc">Enterprise kiosk mode, field worker security, MDM integration</div></div>
-            <div class="dev-card"><span class="dev-icon">🔌</span><div class="dev-name">IoT Devices</div><div class="dev-desc">Smart home, industrial sensors, medical devices, automotive, wearables</div></div>
-            <div class="dev-card"><span class="dev-icon">☁️</span><div class="dev-name">Servers & Cloud</div><div class="dev-desc">AWS/Azure/GCP hardening, container security, Kubernetes, SIEM</div></div>
-            <div class="dev-card"><span class="dev-icon">🌐</span><div class="dev-name">Network</div><div class="dev-desc">Next-gen firewalls, DNS security, zero-trust architecture, SD-WAN</div></div>
-            <div class="dev-card"><span class="dev-icon">🔒</span><div class="dev-name">Web Browsers</div><div class="dev-desc">Extension security, credential vault, anti-fingerprinting, session isolation</div></div>
-            <div class="dev-card"><span class="dev-icon">✉️</span><div class="dev-name">Email Systems</div><div class="dev-desc">Phishing detection, spoofing prevention, attachment sandboxing, BEC protection</div></div>
-        </div>
-        <div style="text-align:center;margin-top:2.5rem"><a href="devices.html" class="btn btn-s btn-sm">View Detailed Specs →</a></div>
-        </div>
-    </section>
-
-    <!-- Differentiator Features -->
-    <section class="section section-alt" id="features">
-        <div class="section-in"><div class="section-hdr">
-            <span class="section-lbl">The Moat</span>
-            <h2 class="section-ttl">5 Features No One Else Has</h2>
-            <p class="section-dsc">Capabilities that make OmniaGuard the most advanced cybersecurity platform on the market.</p>
-        </div>
-        <div class="g3">
-            <div class="feat-card"><div class="feat-icon">🎯</div><div class="feat-name">Threat Radar</div><div class="feat-desc">Global threat intelligence network fed by 14 agent sensors. Real-time IOC feed, dark web monitoring, APT tracking with visual threat map.</div><span class="feat-price">Enterprise: Included</span></div>
-            <div class="feat-card"><div class="feat-icon">⚔️</div><div class="feat-name">Red Cell</div><div class="feat-desc">AI-powered continuous automated attack simulation. Never-sleeping penetration testing that finds gaps before attackers do.</div><span class="feat-price">Add-on: +$199/mo</span></div>
-            <div class="feat-card"><div class="feat-icon">👻</div><div class="feat-name">ShadowGrid Deception</div><div class="feat-desc">Deploy decoy assets — fake databases, credentials, servers. Trap attackers, feed intel to agents, turn breaches into learning events.</div><span class="feat-price">Enterprise: Included</span></div>
-            <div class="feat-card"><div class="feat-icon">🔗</div><div class="feat-name">VendorGuard</div><div class="feat-desc">Continuous third-party risk scoring. Post-SolarWinds vendor monitoring with auto-alerts when vendor security degrades.</div><span class="feat-price">Enterprise: Included</span></div>
-            <div class="feat-card"><div class="feat-icon">📋</div><div class="feat-name">Compliance Automation</div><div class="feat-desc">Real-time SOC2, ISO 27001, PCI-DSS, GDPR scoring. Auto-evidence collection and audit-ready reports with Green/Yellow/Red dashboard.</div><span class="feat-price">Professional+: Included</span></div>
-            <div class="feat-card"><div class="feat-icon">🛡️</div><div class="feat-name">Zero Prompt Injection</div><div class="feat-desc">Patented guarantee against AI manipulation. Every agent action verified independently — no implicit trust, no inherited permissions.</div><span class="feat-price">All Tiers: Included</span></div>
-        </div>
-        <div style="text-align:center;margin-top:2.5rem"><a href="features.html" class="btn btn-p btn-sm">Explore All Features →</a></div>
-        </div>
-    </section>
-
-    <!-- 17-Company Empire Shield -->
-    <section class="section" id="empire">
-        <div class="section-in"><div class="section-hdr">
-            <span class="section-lbl">The Omnia Shield</span>
-            <h2 class="section-ttl">17-Company Security Ecosystem</h2>
-            <p class="section-dsc">One SDK protecting an entire business empire. Each entity has a dedicated security agent — all governed by the OmniaGuard neural command layer.</p>
-        </div>
-        <div class="emp-grid">
-            <div class="emp-card emp-parent"><h4></h4><div class="agent">PARENT — CORPORATE GOVERNANCE AGENT</div><p>All 17 entities protected by OmniaGuard SDK with Zero Prompt Injection Guarantee</p></div>
-            <div class="emp-card"><h4>OmniaGuard</h4><div class="agent">14 Security Agents</div><p>Self-referential security — protects itself and all others</p></div>
-            <div class="emp-card"><h4>Enterprise Client</h4><div class="agent">Data Protection Agent</div><p>Data encryption, PII protection, PCI compliance</p></div>
-            <div class="emp-card"><h4>Legal Sector Client</h4><div class="agent">Privacy Shield Agent</div><p>Anonymity protocols, visitor privacy, content isolation</p></div>
-            <div class="emp-card"><h4>Sovereignty Privacy</h4><div class="agent">Sovereignty Vault Agent</div><p>GDPR/CCPA automation, dark web monitoring, takedowns</p></div>
-            <div class="emp-card"><h4>SupplyChain Pro</h4><div class="agent">ChainLock Agent</div><p>Route encryption, identity protection, cargo tracking</p></div>
-            <div class="emp-card"><h4>Companies 7–17</h4><div class="agent">Pre-Secured Pipeline</div><p>Future verticals — all pre-secured from day zero</p></div>
-        </div></div>
-    </section>
-
-    <!-- Pricing Teaser -->
-    <section class="section section-alt" id="pricing">
-        <div class="section-in"><div class="section-hdr">
-            <span class="section-lbl">Transparent Pricing</span>
-            <h2 class="section-ttl">Protection for Every Scale</h2>
-            <p class="section-dsc">From personal devices to multi-company empires — security that grows with you.</p>
-        </div>
-        <div class="price-grid">
-            <div class="price-card"><div class="price-tier">Starter</div><div class="price-name">Starter</div><div class="price-amt">$99</div><div class="price-sub">per month</div>
-                <ul class="price-list"><li>5 devices</li><li>Identity monitoring</li><li>Dark web alerts</li><li>Basic Threat Radar</li><li>Mobile defense</li></ul>
-                <a href="pricing.html" class="btn btn-s btn-sm" style="width:100%;justify-content:center">Choose Plan</a></div>
-            <div class="price-card pop" style="position:relative"><div class="price-tier">Growth</div><div class="price-name">Professional</div><div class="price-amt">$499</div><div class="price-sub">per month</div>
-                <ul class="price-list"><li>25 devices</li><li>Business email protection</li><li>Cloud backup</li><li>Compliance scoring</li><li>Red Cell Lite</li><li>Priority support</li></ul>
-                <a href="pricing.html" class="btn btn-p btn-sm" style="width:100%;justify-content:center">Choose Plan</a></div>
-            <div class="price-card"><div class="price-tier">Scale</div><div class="price-name">Enterprise</div><div class="price-amt">$2,499</div><div class="price-sub">per month</div>
-                <ul class="price-list"><li>Unlimited devices</li><li>Full Threat Radar</li><li>Red Cell + ShadowGrid</li><li>VendorGuard</li><li>24/7 SOC chat</li><li>1-hour SLA</li></ul>
-                <a href="pricing.html" class="btn btn-s btn-sm" style="width:100%;justify-content:center">Contact Sales</a></div>
-            <div class="price-card"><div class="price-tier">Dominion</div><div class="price-name">Empire</div><div class="price-amt">$2,499+</div><div class="price-sub">per month</div>
-                <ul class="price-list"><li>17-company coverage</li><li>Cross-entity governance</li><li>AI agent hardening</li><li>Dedicated CSM</li><li>Quarterly red team</li><li>Cyber insurance</li></ul>
-                <a href="pricing.html" class="btn btn-s btn-sm" style="width:100%;justify-content:center">Contact Sales</a></div>
-        </div>
-        <p style="text-align:center;margin-top:1.5rem;font-size:.8rem;color:var(--txt3)">Annual billing: 2 months free. All plans include Zero Prompt Injection Guarantee.</p>
-        </div>
-    </section>
-
-    <!-- Trust Badges -->
-    <section class="section">
-        <div class="section-in"><div class="section-hdr">
-            <span class="section-lbl">Compliance & Certifications</span>
-            <h2 class="section-ttl">Trusted by Design</h2>
-        </div>
-        <div class="trust-row">
-            <div class="trust-badge">🛡️ SOC 2 Type II</div>
-            <div class="trust-badge">📋 ISO 27001</div>
-            <div class="trust-badge">🤖 ISO 42001 (AI)</div>
-            <div class="trust-badge">🏛️ NIST AI RMF</div>
-            <div class="trust-badge">🇨🇦 Canadian Data Residency</div>
-            <div class="trust-badge">🔐 Zero Prompt Injection</div>
-        </div>
-        <div style="text-align:center;margin-top:1.5rem"><a href="about.html" class="btn btn-s btn-sm">View Trust Center →</a></div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section section-alt" style="text-align:center">
-        <div class="section-in">
-            <h2 class="section-ttl">Ready to Deploy Your Digital Immune System?</h2>
-            <p class="section-dsc" style="margin-bottom:2rem">14 AI agents start protecting your infrastructure in minutes. No human lag. No gaps. No compromise.</p>
-            <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-                <a href="pricing.html" class="btn btn-p">Start Free Trial</a>
-                <a href="about.html#contact" class="btn btn-s">Talk to Security Expert</a>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>Global Threat Radar</h3>
+                <p>Unified security across smartphones, servers, and IoT devices through a single neural command layer.</p>
             </div>
         </div>
     </section>
 
-    <footer class="footer"><div class="footer-in">
-        <div class="footer-top">
-            <div class="footer-brand">
-                <a href="index.html" class="nav-logo" style="margin-bottom:.4rem"><img src="assets/omniaguard-logo.webp" alt="OmniaGuard" width="32" height="32" loading="eager"><b>Omnia<span>Guard</span></b></a>
-                <p>Full-spectrum cybersecurity for every device, every vector, everywhere. Autonomous AI defense built in Canada.</p>
-            </div>
-            <div class="footer-col"><h5>Platform</h5><a href="devices.html">Devices</a><a href="features.html">Features</a><a href="technology.html">Technology</a><a href="pricing.html">Pricing</a></div>
-            <div class="footer-col"><h5>Company</h5><a href="about.html">Trust Center</a><a href="about.html#certifications">Certifications</a><a href="about.html#bug-bounty">Bug Bounty</a><a href="agents.html">Agents</a><a href="partners.html">Partners</a></div>
-            <div class="footer-col"><h5>Resources</h5><a href="technology.html#sdk">SDK Docs</a><a href="technology.html#whitepaper">Whitepaper</a><a href="https://github.com/omniaguard" target="_blank">GitHub</a><a href="https://status.omniaguard.com" target="_blank">Status</a></div>
+    <footer>
+        <div class="footer-branding">FRANCISCO HOLDINGS INC.</div>
+        <div class="footer-copyright">
+            &copy; 2026 OMNIAGUARD. ALL RIGHTS RESERVED.
         </div>
-        <div class="footer-bot">
-            <small>&copy; 2026 OmniaGuard. All rights reserved.</small>
-            <small></small>
-        </div>
-    </div></footer>
+    </footer>
 
-    <script>
-    const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis')}),{threshold:.1});
-    document.querySelectorAll('.card,.dev-card,.price-card,.emp-card,.feat-card').forEach(el=>{el.classList.add('reveal');obs.observe(el)});
-    </script>
-<script src="chat-widget.js?v=2.0" defer></script>
-<div style="position:fixed;bottom:0;left:0;right:0;background:rgba(10,10,15,.95);border-top:1px solid rgba(0,212,255,.15);padding:8px 20px;font-size:.65rem;color:rgba(255,255,255,.4);text-align:center;z-index:9999">All inquiries handled securely. Contact: info@omniaguard.com</div><div style="text-align:center;padding:.5rem;font-size:.6rem;color:#4a5568;background:#0a0f1a;border-top:1px solid rgba(100,255,218,.1)">OmniaGuard is an AI security platform for agentic AI systems. Not affiliated with industrial fire safety or physical security products.</div></body>
+</body>
 </html>
